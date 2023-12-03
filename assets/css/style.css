@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(233, 233, 233);
+}
+
+.logo {
+  max-width: 10%;
+  outline: 2px solid rgb(59, 120, 59);
+  outline-offset: 15px;
+  overflow: hidden;
+  transform: rotate(220deg);
+}
+
+.logoName {
+  font-size: 5rem;
+  color: rgb(219, 42, 42);
+}
+
+.header {
+  height: 25rem;
+  display: flex;
+  gap: 6rem;
+  margin-left: 2.5rem;
+}
+
+/*  */
+.transImg {
+  width: 3%;
+}
+.tranInpt {
+  background-color: rgb(243, 243, 243);
+}
+.tranInput {
+  border: 0rem solid;
+  border-bottom: 2px solid rgb(134, 134, 136);
+}
+/*  */
+.btn:hover {
+  transition: 2 all;
+}
+/*  */
+.transTable {
+  background-color: darkseagreen;
+}
