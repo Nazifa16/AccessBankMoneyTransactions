@@ -11,8 +11,8 @@ const Transaction = {
   date: new Date(),
 
   increase: function (money) {
-    if (money < 0) {
-      alert("Please enter a valid number for Money In");
+    if (money <= 0) {
+      alert("Please enter a valid number");
       return;
     } else if (money >= this.limit) {
       alert("The amount you want to deposit exceeds the limit");
@@ -39,8 +39,6 @@ const Transaction = {
 
   decrease: function (money) {
     if (money <= 0) {
-      alert("Please enter a valid number for Money Out");
-      return;
     } else if (this.balance - money < 0) {
       alert("You don't have enough money in your balance");
       return;
@@ -60,7 +58,7 @@ const Transaction = {
   },
 
   show: function () {
-    return this.report;
+    return this.balance;
   },
 };
 console.log(Transaction.increase(0));
@@ -97,6 +95,5 @@ BtnShow.addEventListener("click", function () {
     `
     )
     .join("");
-
   TranList.innerHTML = list;
 });
