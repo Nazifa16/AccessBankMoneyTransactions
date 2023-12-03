@@ -17,6 +17,11 @@ const Transaction = {
     } else if (money >= this.limit) {
       alert("The amount you want to deposit exceeds the limit");
       return;
+    } else if (this.balance + money > this.limit) {
+      alert(
+        "If you enter this amount, your balance will exceed the limit, so it is not possible to enter this amount, take a look at your balance"
+      );
+      return;
     } else {
       this.balance += money;
     }
